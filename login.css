@@ -1,0 +1,87 @@
+    * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #262626;
+            background:
+                radial-gradient(circle at top, rgba(255, 180, 94, 0.32), transparent 34%),
+                linear-gradient(135deg, #fff7ed 0%, #fff2df 45%, #ffe2c2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 32px 16px;
+        }
+
+        .pagina-login {
+            width: 100%;
+            max-width: 388px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 28px;
+        }
+        .cuadro-login {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.92);
+            border-radius: 8px;
+            box-shadow: 0 18px 45px rgba(156, 72, 0, 0.14);
+            padding: 32px 30px 28px;
+            border: 1px solid rgba(255, 154, 61, 0.18);
+        }
+
+        h1 {
+            font-size: 24px;
+            line-height: 1.2;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+            color: #343434;
+        }
+
+        input {
+            width: 100%;
+            height: 41px;
+            border: 2px solid #ffbd7a;
+            border-radius: 5px;
+            font-size: 16px;
+            padding: 8px 12px;
+            outline: none;
+            color: #262626;
+            background: #fff;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        input:focus {
+            border-color: #f28c28;
+            box-shadow: 0 0 0 3px rgba(242, 140, 40, 0.22);
+        }
+
+        button {
+            width: 100%;
+            height: 48px;
+            margin-top: 14px;
+            border: 0;
+            border-radius: 4px;
+            background: linear-gradient(135deg, #ffb347 0%, #f28c28 45%, #e86d1f 100%);
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 10px 22px rgba(232, 109, 31, 0.24);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        button:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 13px 26px rgba(232, 109, 31, 0.3);
+        }
